@@ -1,3 +1,5 @@
+enable_testing()
+
 add_executable(print_task_test print_test.c)
 target_link_libraries(print_task_test print_task)
 target_include_directories(print_task_test PUBLIC

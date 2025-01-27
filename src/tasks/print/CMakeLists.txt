@@ -1,8 +1,10 @@
 add_library(print_task print.c)
 
+# Specify targets to link compiled binaries
+target_link_libraries(print_task PUBLIC error)
+
 # Specify directories with relevant header files
 target_include_directories(print_task PUBLIC
-  "${PROJECT_BINARY_DIR}"
   "${CMAKE_SOURCE_DIR}/src/common"
 )
 

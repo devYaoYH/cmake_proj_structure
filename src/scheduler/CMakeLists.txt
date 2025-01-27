@@ -1,8 +1,7 @@
 add_library(scheduler scheduler.c)
-target_link_libraries(scheduler PUBLIC init_state)
+target_link_libraries(scheduler PUBLIC init_state error)
 
 target_include_directories(scheduler PUBLIC
-  "${PROJECT_BINARY_DIR}"
   "${CMAKE_SOURCE_DIR}/src/common"
   "${CMAKE_SOURCE_DIR}/src/states/init"
 )

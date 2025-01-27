@@ -1,4 +1,4 @@
 #pragma once
 
-#include "slate.h"
-#include "scheduler.h"
+#include "common/slate.h"
+#include "scheduler/scheduler.h"
